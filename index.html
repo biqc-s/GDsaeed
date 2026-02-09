@@ -4,6 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="بوابة طلاب الجامعة السعودية الإلكترونية لتعلم تطوير الألعاب باستخدام GDevelop بدون كود معقد. ورش عمل، دروس، وموارد عربية.">
+    <meta name="keywords" content="GDevelop, تطوير ألعاب, بدون كود, الجامعة السعودية الإلكترونية, SEU, تعلم برمجة, ألعاب">
+    <meta name="author" content="Saeed Jahash">
+    <meta property="og:title" content="GDevelop SEU Hub | بوابة مطوري الألعاب">
+    <meta property="og:description" content="تعلم تطوير الألعاب باستخدام GDevelop بدون كود. ورش عمل ودروس مخصصة لطلاب الجامعة السعودية الإلكترونية.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#7d5fff">
     <title>GDevelop SEU Hub | بوابة مطوري الألعاب</title>
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -11,54 +18,68 @@
 
 <body>
 
-    <nav class="navbar">
+    <!-- Reading Progress Bar -->
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <nav class="navbar" aria-label="التنقل الرئيسي">
         <div class="logo">GD<span class="highlight">Hub</span></div>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
         <div class="nav-links">
             <a href="#">الرئيسية</a>
             <a href="#workshop">ورشة العمل</a>
-            <a href="#events">نظام الأحداث</a>
             <a href="#tutorials">الدروس</a>
             <a href="#resources">المصادر</a>
+            <a href="#developer">المطور</a>
         </div>
-        <button class="btn-primary">ابدأ الآن</button>
+        <a href="#workshop" class="btn-primary">ابدأ الآن</a>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <h1>اصنع لعبتك الأولى مع <span class="highlight">GDevelop</span></h1>
             <p>بوابة طلاب الجامعة السعودية الإلكترونية لتعلم تطوير الألعاب بدون كود معقد.</p>
-            <a href="#workshop" class="btn-primary"
-                style="background: transparent; border: 2px solid var(--primary-color);">ابدأ الورشة</a>
-            <a href="#events" class="btn-primary">تعلم نظام الأحداث</a>
+            <div>
+                <a href="#workshop" class="btn-primary"
+                    style="background: transparent; border: 2px solid var(--primary-color);">ابدأ الورشة</a>
+                <a href="#tutorials" class="btn-primary">تصفح الدروس</a>
+            </div>
         </div>
     </header>
 
-    <section class="features" id="why-gdevelop">
+    <section class="features" id="why-gdevelop" aria-label="مميزات GDevelop">
         <div class="card">
-            <h3>🚀 بدون كود</h3>
-            <p>استخدم نظام الأحداث المرئي لبناء منطق اللعبة بسهولة وسرعة.</p>
+            <h3>بدون كود</h3>
+            <p>استخدم نظام الأحداث المرئي لبناء منطق اللعبة بسهولة وسرعة دون الحاجة لكتابة سطر برمجي واحد.</p>
         </div>
         <div class="card">
-            <h3>🎮 تصدير متعدد</h3>
-            <p>انشر لعبتك على الويب، الهواتف الذكية، وأجهزة الكمبيوتر بضغطة زر.</p>
+            <h3>تصدير متعدد</h3>
+            <p>انشر لعبتك على الويب، الهواتف الذكية، وأجهزة الكمبيوتر بضغطة زر واحدة.</p>
         </div>
         <div class="card">
-            <h3>📚 مصادر عربية</h3>
-            <p>شروحات ودروس مخصصة لمساعدتك في رحلتك الدراسية والشخصية.</p>
+            <h3>مصادر عربية</h3>
+            <p>شروحات ودروس مخصصة باللغة العربية لمساعدتك في رحلتك الدراسية والشخصية.</p>
         </div>
     </section>
 
     <!-- Workshop Section -->
-    <section id="workshop">
+    <section id="workshop" aria-label="ورشة العمل">
         <div class="guide-container">
             <header style="text-align: center; margin-bottom: 4rem;">
                 <span class="highlight" style="font-size: 1.2rem; letter-spacing: 2px;">ورشة عمل (60 دقيقة)</span>
-                <h1 style="font-size: 2.5rem; margin: 1rem 0;">العلم خلف الإدمان <br> <span
-                        style="font-size: 1.8rem; color: var(--text-secondary);">صمم لعبة لا يمكن تركها</span></h1>
+                <h2 style="font-size: 2.5rem; margin: 1rem 0;">العلم خلف الإدمان <br> <span
+                        style="font-size: 1.8rem; color: var(--text-secondary);">صمم لعبة لا يمكن تركها</span></h2>
+                <div class="workshop-progress">
+                    <span>تقدم الورشة:</span>
+                    <span class="steps-counter">0 / 8</span>
+                </div>
             </header>
 
             <!-- ================= PART 1 ================= -->
-            <div class="width:100%">
+            <div>
                 <h2 class="section-separator" style="color: var(--primary-color); border: none; font-size: 2rem;">الجزء
                     الأول: الافتتاحية والنظرية (10 دقائق)</h2>
 
@@ -70,7 +91,7 @@
                     style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); margin: 2rem 0; padding: 0;">
                     <div class="psych-card">
                         <span class="psych-title">1. حلقة المكافأة (Reward Loop)</span>
-                        <p>فعل ← مكافأة ← رغبة ← فعل مرة أخرى.</p>
+                        <p>فعل &larr; مكافأة &larr; رغبة &larr; فعل مرة أخرى.</p>
                         <small style="color: #bbb;">مثال: صوت "طحن الحلوى" في Candy Crush يعطي دفعة دوبامين
                             فورية.</small>
                     </div>
@@ -89,14 +110,14 @@
             </div>
 
             <!-- ================= PART 2 ================= -->
-            <div class="width:100%">
+            <div>
                 <h2 class="section-separator" style="color: var(--primary-color); font-size: 2rem;">الجزء الثاني: الورشة
                     التفاعلية (15 دقيقة)</h2>
                 <div class="slide-header">نشاط: صمم حلقتك الإدمانية (Game Loop Canvas)</div>
                 <p>لا تحتاج لمهارة في الرسم. خذ ورقة وقلم وخطط للعبتك القادمة بناءً على القواعد النفسية.</p>
 
                 <div class="canvas-section">
-                    <h2 style="text-align: center; margin-bottom: 2rem; color: #000;">GAME LOOP CANVAS 📄</h2>
+                    <h2 style="text-align: center; margin-bottom: 2rem; color: #000;">GAME LOOP CANVAS</h2>
 
                     <h3>1. الفكرة الأساسية</h3>
                     <p><strong>نوع اللعبة:</strong> [ ] جمع (Collector) - [ ] مطاردة - [ ] ألغاز</p>
@@ -120,14 +141,14 @@
             </div>
 
             <!-- ================= PART 3 ================= -->
-            <div class="width:100%">
+            <div>
                 <h2 class="section-separator" style="color: var(--primary-color); font-size: 2rem;">الجزء الثالث: بناء
                     لعبة جامع النجوم (Star Collector)</h2>
                 <div class="slide-header">دليل بناء اللعبة (30-45 دقيقة) - Visual Events</div>
 
                 <!-- Overview -->
                 <div class="psych-card" style="margin-bottom: 2rem;">
-                    <span class="psych-title">🌟 نظرة عامة</span>
+                    <span class="psych-title">نظرة عامة</span>
                     <p><strong>نوع اللعبة:</strong> جمع (Casual Arcade) | <strong>طريقة البرمجة:</strong> Visual Events
                         (بدون كود)</p>
                     <p>سنتعلم: استخدام الشروط والأحداث، الحركة، التوليد التلقائي، والمتغيرات.</p>
@@ -140,8 +161,7 @@
                         <h3>الإعداد الأولي</h3>
                     </div>
                     <ol style="margin-right: 2rem; color: var(--text-secondary);">
-                        <li>افتح GDevelop واختر <strong>Create a new project</strong> > <strong>Empty game</strong>.
-                        </li>
+                        <li>افتح GDevelop واختر <strong>Create a new project</strong> > <strong>Empty game</strong>.</li>
                         <li>سمّه <code>StarCollector</code>.</li>
                         <li>أضف مشهد جديد <code>GameScene</code> وافتحه.</li>
                         <li>اضبط الخصائص: <strong>Width:</strong> 800, <strong>Height:</strong> 600,
@@ -156,8 +176,7 @@
                         <h3>إضافة الكائنات</h3>
                     </div>
                     <ul style="margin-right: 2rem; color: var(--text-secondary);">
-                        <li><strong>اللاعب (Player):</strong> Sprite، الحجم 64x64، ضعه في أسفل المنتصف (X: 368, Y: 500).
-                        </li>
+                        <li><strong>اللاعب (Player):</strong> Sprite، الحجم 64x64، ضعه في أسفل المنتصف (X: 368, Y: 500).</li>
                         <li><strong>النجمة (Star):</strong> Sprite، الحجم 32x32. (احذفها من المشهد بعد الإنشاء).</li>
                         <li><strong>النص (ScoreText):</strong> Text، "النقاط: 0"، أعلى اليسار.</li>
                         <li><strong>المؤقت (TimerText):</strong> Text، "الوقت: 60"، أعلى اليمين.</li>
@@ -174,57 +193,34 @@
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">3.1 التحريك لليمين</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions (الشروط): │
-                        ├─────────────────────────────────────────────┤
-                        │ ⌨️ Keyboard │
-                        │ → Key Right arrow is pressed │
-                        │ │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions (الأحداث): │
-                        ├─────────────────────────────────────────────┤
-                        │ 🎮 Player │
-                        │ → Add a force (angle) │
-                        │ • Angle: 0 degrees (يمين) │
-                        │ • Speed: 300 pixels/second │
-                        │ • Movement: Instant │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions (الشروط):
+  Key Right arrow is pressed
+
+Actions (الأحداث):
+  Player > Add a force (angle)
+    Angle: 0 degrees (يمين)
+    Speed: 300 pixels/second
+    Movement: Instant</div>
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">3.2 التحريك لليسار</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ ⌨️ Keyboard │
-                        │ → Key Left arrow is pressed │
-                        │ │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🎮 Player │
-                        │ → Add a force (angle) │
-                        │ • Angle: 180 degrees (يسار) │
-                        │ • Speed: 300 pixels/second │
-                        │ • Movement: Instant │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions:
+  Key Left arrow is pressed
+
+Actions:
+  Player > Add a force (angle)
+    Angle: 180 degrees (يسار)
+    Speed: 300 pixels/second
+    Movement: Instant</div>
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">3.3 منع الخروج من الشاشة</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ (لا توجد شروط - يعمل دائماً) │
-                        │ │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🎮 Player │
-                        │ → Stay on the screen │
-                        │ • Mode: Inside the screen │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions:
+  (لا توجد شروط - يعمل دائماً)
+
+Actions:
+  Player > Stay on the screen
+    Mode: Inside the screen</div>
                 </div>
 
                 <!-- Step 4 -->
@@ -236,57 +232,29 @@
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">4.1 إنشاء نجمة كل ثانية</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ ⏱️ Timers and time │
-                        │ → Value of a timer │
-                        │ • Timer name: "StarSpawn" │
-                        │ • Sign: ≥ (greater or equal) │
-                        │ • Time: 1 second │
-                        │ │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🌟 Star │
-                        │ → Create an object │
-                        │ • Object: Star │
-                        │ • X: Random(800) │
-                        │ • Y: -50 │
-                        │ │
-                        │ ⏱️ Timers and time │
-                        │ → Reset a timer │
-                        │ • Timer name: "StarSpawn" │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions:
+  Timer "StarSpawn" >= 1 second
+
+Actions:
+  Create object Star
+    X: Random(800)
+    Y: -50
+  Reset timer "StarSpawn"</div>
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">4.2 تحريك النجوم وحذفها</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ (لا توجد شروط) │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🌟 Star │
-                        │ → Add a force (angle) │
-                        │ • Angle: 90 degrees (للأسفل) │
-                        │ • Speed: 200 pixels/second │
-                        └─────────────────────────────────────────────┘
+Conditions: (لا توجد شروط)
+Actions:
+  Star > Add a force (angle)
+    Angle: 90 degrees (للأسفل)
+    Speed: 200 pixels/second
 
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🌟 Star │
-                        │ → Compare Y position > 650 │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🌟 Star │
-                        │ → Delete the object │
-                        └─────────────────────────────────────────────┘
-                    </div>
+---
+
+Conditions:
+  Star > Y position > 650
+Actions:
+  Star > Delete the object</div>
                 </div>
 
                 <!-- Step 5 -->
@@ -298,28 +266,19 @@
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">5.1 تهيئة النقاط</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: At the beginning of the scene │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        │ 📊 Variable Score = 0 │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions: At the beginning of the scene
+Actions:
+  Variable Score = 0</div>
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">5.2 الاصطدام والجمع</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🌟 Star collision with 🎮 Player │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 🔊 Play sound "coin.wav" │
-                        │ 📊 Variable Score + 1 │
-                        │ 🌟 Delete Star │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions:
+  Star collision with Player
+
+Actions:
+  Play sound "coin.wav"
+  Variable Score + 1
+  Delete Star</div>
                 </div>
 
                 <!-- Step 6 -->
@@ -329,17 +288,10 @@
                         <h3>عرض النقاط</h3>
                     </div>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: (Always) │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: │
-                        ├─────────────────────────────────────────────┤
-                        │ 📝 ScoreText │
-                        │ → Modify the text │
-                        │ • Value: "النقاط: " + ToString( │
-                        │ Variable(Score)) │
-                        └─────────────────────────────────────────────┘
-                    </div>
+Conditions: (Always)
+Actions:
+  ScoreText > Modify the text
+    Value: "النقاط: " + ToString(Variable(Score))</div>
                 </div>
 
                 <!-- Step 7 -->
@@ -351,106 +303,100 @@
 
                     <h4 style="color: var(--accent-color); margin-top: 1rem;">7.1 تهيئة وعرض المؤقت</h4>
                     <div class="code-block" dir="ltr">
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: At beginning of scene │
-                        ├─────────────────────────────────────────────┤
-                        │ Actions: Reset timer "GameTimer" │
-                        └─────────────────────────────────────────────┘
+Conditions: At beginning of scene
+Actions: Reset timer "GameTimer"
 
-                        ┌─────────────────────────────────────────────┐
-                        │ Conditions: Timer "GameTimer" < 60 sec │ ├─────────────────────────────────────────────┤ │
-                            Actions: │ │ 📝 TimerText set to: "الوقت: " + ToString( │ │ 60 - Timer("GameTimer")) │
-                            └─────────────────────────────────────────────┘ </div>
+---
 
-                            <h4 style="color: var(--accent-color); margin-top: 1rem;">7.2 Game Over</h4>
-                            <div class="code-block" dir="ltr">
-                                ┌─────────────────────────────────────────────┐
-                                │ Conditions: Timer "GameTimer" ≥ 60 sec │
-                                ├─────────────────────────────────────────────┤
-                                │ Actions: │
-                                │ 🌟 Delete Star │
-                                │ 📝 Show GameOverText │
-                                │ ⏸️ Pause the scene │
-                                └─────────────────────────────────────────────┘
-                            </div>
-                    </div>
+Conditions: Timer "GameTimer" &lt; 60 sec
+Actions:
+  TimerText > set to: "الوقت: " + ToString(60 - Timer("GameTimer"))</div>
 
-                    <!-- Step 8 -->
-                    <div class="workshop-step">
-                        <div class="step-header">
-                            <div class="step-number">8</div>
-                            <h3>التحسينات (اختياري)</h3>
-                        </div>
-                        <p>يمكنك إضافة رسائل تشجيعية عند الوصول لنقاط معينة:</p>
-                        <div class="code-block" dir="ltr">
-                            ┌─────────────────────────────────────────────┐
-                            │ Conditions: Variable Score = 10 │
-                            ├─────────────────────────────────────────────┤
-                            │ Actions: │
-                            │ 📝 Show MessageText "رائع! 🌟" │
-                            │ ⏱️ Reset timer "MessageTimer" │
-                            └─────────────────────────────────────────────┘
-
-                            ┌─────────────────────────────────────────────┐
-                            │ Conditions: Timer "MessageTimer" ≥ 1 sec │
-                            ├─────────────────────────────────────────────┤
-                            │ Actions: 📝 Hide MessageText │
-                            └─────────────────────────────────────────────┘
-                        </div>
-                    </div>
-
-                    <!-- Footer -->
-                    <div
-                        style="text-align: center; margin-top: 4rem; padding: 3rem; background: rgba(0,0,0,0.3); border-radius: 20px;">
-                        <h2 style="margin-bottom: 1rem;">🎉 مبروك!</h2>
-                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">لقد بنيت لعبة كاملة باستخدام
-                            Visual Events وبدون كود!</p>
-                        <a href="#events" class="btn-primary">العودة للأعلى</a>
-                    </div>
+                    <h4 style="color: var(--accent-color); margin-top: 1rem;">7.2 Game Over</h4>
+                    <div class="code-block" dir="ltr">
+Conditions: Timer "GameTimer" >= 60 sec
+Actions:
+  Delete Star
+  Show GameOverText
+  Pause the scene</div>
                 </div>
+
+                <!-- Step 8 -->
+                <div class="workshop-step">
+                    <div class="step-header">
+                        <div class="step-number">8</div>
+                        <h3>التحسينات (اختياري)</h3>
+                    </div>
+                    <p>يمكنك إضافة رسائل تشجيعية عند الوصول لنقاط معينة:</p>
+                    <div class="code-block" dir="ltr">
+Conditions: Variable Score = 10
+Actions:
+  Show MessageText "رائع!"
+  Reset timer "MessageTimer"
+
+---
+
+Conditions: Timer "MessageTimer" >= 1 sec
+Actions: Hide MessageText</div>
+                </div>
+
+                <!-- Workshop Footer -->
+                <div
+                    style="text-align: center; margin-top: 4rem; padding: 3rem; background: rgba(0,0,0,0.3); border-radius: 20px;">
+                    <h2 style="margin-bottom: 1rem;">مبروك!</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">لقد بنيت لعبة كاملة باستخدام
+                        Visual Events وبدون كود!</p>
+                    <a href="#tutorials" class="btn-primary">تصفح المزيد من الدروس</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="tutorials" class="features" style="background: rgba(0,0,0,0.2);">
+    <section id="tutorials" class="features" style="background: rgba(0,0,0,0.2);" aria-label="الدروس التعليمية">
         <h2 style="grid-column: 1/-1; text-align: center; margin-bottom: 2rem; font-size: 2.5rem;">الدروس التعليمية
             <span class="highlight">(Tutorials)</span>
         </h2>
 
         <div class="card">
-            <h3>🏁 البداية السريعة</h3>
-            <p>تعلم كيفية إنشاء مشروع جديد، إضافة الشخصيات، وتحريكها في أقل من 5 دقائق.</p>
-            <a href="#" style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">قريباً...</a>
+            <h3>البداية السريعة</h3>
+            <p>تعلم كيفية إنشاء مشروع جديد في GDevelop، إضافة الشخصيات والكائنات إلى المشهد، وتحريكها باستخدام نظام
+                الأحداث المرئي. ستتعرف على واجهة البرنامج وكيفية التعامل مع المشاهد والكائنات الأساسية.</p>
+            <span class="badge beginner">مبتدئ</span>
         </div>
         <div class="card">
-            <h3>👾 لعبة منصات (Platformer)</h3>
-            <p>دورة كاملة لصنع لعبة تشبه Super Mario باستخدام القوالب الجاهزة.</p>
-            <a href="#" style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">قريباً...</a>
+            <h3>لعبة منصات (Platformer)</h3>
+            <p>دورة شاملة لصنع لعبة منصات تشبه Super Mario. ستتعلم إضافة الجاذبية والقفز، تصميم المراحل باستخدام
+                Tilemap، إضافة الأعداء والعملات، ونظام الأرواح وإعادة المحاولة.</p>
+            <span class="badge intermediate">متوسط</span>
         </div>
         <div class="card">
-            <h3>🔫 لعبة تصويب (Shooter)</h3>
-            <p>كيفية برمجة إطلاق النار، الأعداء، ونظام الصحة (Health System).</p>
-            <a href="#" style="color: var(--accent-color); margin-top: 1rem; display: inline-block;">قريباً...</a>
+            <h3>لعبة تصويب (Shooter)</h3>
+            <p>كيفية برمجة إطلاق النار مع أنظمة متقدمة: حركة الأعداء الذكية، نظام الصحة (Health System)، المؤثرات
+                البصرية للانفجارات، ونظام الموجات المتصاعدة الصعوبة.</p>
+            <span class="badge advanced">متقدم</span>
         </div>
     </section>
 
-    <section id="resources" class="guide-container" style="text-align: center; margin-top: 0;">
+    <section id="resources" class="guide-container" style="text-align: center; margin-top: 0;" aria-label="المصادر والأدوات">
         <h2 style="margin-bottom: 2rem; font-size: 2.5rem;">المصادر والأدوات</h2>
         <p style="color: var(--text-secondary); margin-bottom: 2rem;">كل ما تحتاجه للبدء في مكان واحد.</p>
 
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <a href="https://gdevelop.io/download" target="_blank" class="btn-primary"
+            <a href="https://gdevelop.io/download" target="_blank" rel="noopener noreferrer" class="btn-primary"
                 style="background: transparent; border: 2px solid var(--primary-color);">تحميل المحرك</a>
-            <a href="https://wiki.gdevelop.io" target="_blank" class="btn-primary"
+            <a href="https://wiki.gdevelop.io" target="_blank" rel="noopener noreferrer" class="btn-primary"
                 style="background: transparent; border: 2px solid var(--accent-color); color: var(--accent-color);">الوثائق
                 الرسمية (Wiki)</a>
-            <a href="https://itch.io/game-assets/free" target="_blank" class="btn-primary"
+            <a href="https://itch.io/game-assets/free" target="_blank" rel="noopener noreferrer" class="btn-primary"
                 style="background: transparent; border: 2px solid #ffffff;">أصول مجانية (Assets)</a>
         </div>
     </section>
 
     <section id="developer" class="features"
-        style="background: linear-gradient(to top, var(--bg-color), rgba(125, 95, 255, 0.05)); padding-bottom: 0;">
+        style="background: linear-gradient(to top, var(--bg-color), rgba(125, 95, 255, 0.05)); padding-bottom: 0;"
+        aria-label="المطور">
         <div class="card" style="grid-column: 1/-1; text-align: center; border: 2px solid var(--primary-color);">
-            <h2 style="margin-bottom: 1rem;">👨‍💻 المطور</h2>
+            <h2 style="margin-bottom: 1rem;">المطور</h2>
             <p style="font-size: 1.2rem; color: #fff; margin-bottom: 1rem;">
                 تم تطوير هذه المنصة بواسطة <strong style="color: var(--accent-color); font-size: 1.4rem;">Saeed
                     Jahash</strong>
@@ -462,8 +408,11 @@
     </section>
 
     <footer>
-        <p>تم التطوير بواسطة <span class="highlight">Saeed Jahash</span> | GDsaeed © 2026</p>
+        <p>تم التطوير بواسطة <span class="highlight">Saeed Jahash</span> | GDsaeed &copy; 2026</p>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="العودة للأعلى">&uarr;</button>
 
     <script src="main.js"></script>
 </body>
